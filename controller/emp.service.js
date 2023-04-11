@@ -31,7 +31,7 @@ module.exports = {
     },
     getAllEmp:(callback)=>{
         pool.query(
-            `select fname, jobTitle, phoneNum, email, address, city, state, Pec, PECphone,pecRelation, Sec, SECphone, secRelation from employee_info`,
+            `select * from employee_info`,
             [],
             (error, results, fields) => {
                 if (error) {
